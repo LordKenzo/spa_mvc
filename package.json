@@ -1,0 +1,29 @@
+{
+  "name": "spa_mvc_2",
+  "version": "1.0.0",
+  "description": "A tutorial framework",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --watch",
+    "server": "node server.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "Tutorial",
+    "Framework",
+    "TypeScript"
+  ],
+  "author": "Lorenzo Franceschini <lordkenzo@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.18",
+    "happypack": "^4.0.1",
+    "lit-html": "^0.9.0",
+    "ts-loader": "^3.5.0",
+    "typescript": "^2.7.2",
+    "webpack": "^3.11.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
