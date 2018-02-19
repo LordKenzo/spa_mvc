@@ -8,6 +8,7 @@ export class App extends HTMLElement{
   private root: ShadowRoot;
   private currentPage: Page | null = null;
 
+
   constructor(public selector: string){
     super();
     this.root = this.attachShadow({mode:"open"});
@@ -41,7 +42,7 @@ export class App extends HTMLElement{
   public updateView(){
     if(this.htmlElement){
       if(this.currentPage)
-        this.htmlElement.innerHTML = this.currentPage.pageName;
+        this.htmlElement.innerHTML = this.currentPage.renderPage();
     }
 
   }

@@ -15,7 +15,7 @@ export class Router{
       throwError(`Elemento Applicazione ${appSelector} non valido!`);
     }
     window.addEventListener('hashchange', e => {
-      console.debug('#Hash Nuovo url:', location.href);
+      //console.debug('#Hash Nuovo url:', location.href);
       this.hashChange();
     });
   }

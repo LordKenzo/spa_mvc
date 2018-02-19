@@ -31,7 +31,7 @@ module.exports = {
         rules: [
             {
                 test: /\.ts$/,
-                exclude: [path.resolve(__dirname, "node_modules")],
+                exclude: [path.resolve(__dirname, "node_modules"),      path.resolve(__dirname, "src_old")],
                 use: 'happypack/loader?id=ts'
             }
         ]
